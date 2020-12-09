@@ -41,7 +41,7 @@ func listenSignal(ctx context.Context) error {
 
 func startServer(ctx context.Context, addr string) error {
 	svr := &http.Server{Addr: addr, Handler: http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		_, _ = io.WriteString(w, "Hello, world!\n")
+		_, _ = io.WriteString(w, "Hello, Ziyu! ID:G20200607010463\n")
 	})}
 	go func() {
 		select {
